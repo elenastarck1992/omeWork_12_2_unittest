@@ -7,7 +7,4 @@ def get_val(collection, key, default='git'):
 default
     """
     dict_key = key.strip()
-    if collection.get(dict_key) is not None:
-        return collection.get(dict_key)
-    else:
-        return default
+    return collection.get(dict_key, default)
